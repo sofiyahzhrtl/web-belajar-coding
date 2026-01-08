@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Biodata Diri</legend>
+      <p>Masukkan data di bawah ini dengan benar</p>
+      
+      <label for="nama_depan">Nama Depan</label>  
+      <input type="text" name="nama_depan" id="nama_depan" required>
+      <br> <br>
+      <label for="nama_belakang">Nama Belakang</label>
+      <input type="text" name="nama_belakang" id="nama_belakang" disabled>
+      <br> <br>
+      <label for="tempat_lahir">Tempat Lahir</label>
+      <input type="text" name="tempat_lahir" id="tempat_lahir" maxlength="25">
+      <br> <br>
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+      <br> <br>
+      <label for="jenis_kelamin">Jenis Kelamin</label>
+      <label>
+        <input type="radio" name="gender" value="male">Laki-Laki
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">Perempuan
+      </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>akun</legend>
+        <label for="email">email</label>
+        <input type="email" name="email" id="username" required>
+        <br> <br>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" required minlength="7">
+        <br> <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>hobby</legend>
+        <label for="membaca">
+         <input type="checkbox" name="hobi" id="membaca" value="MEMBACA" checked>MEMBACA
+        </label>
+        <br>
+        <label for="menulis">
+         <input type="checkbox" name="hobi" id="menulis" value="MENULIS" checked>MENULIS
+        </label>
+        <br>
+        <label for="memasak">
+         <input type="checkbox" name="hobi" id="memasak" value="MEMASAK">MEMASAK
+        </label>
+        <br>
+        <label for="berenang">
+         <input type="checkbox" name="hobi" id="berenang" value="BERENANG">BERENANG
+        </label>
+        <br>
+        <label for="melukis">
+         <input type="checkbox" name="hobi" id="melukis" value="MELUKIS">MELUKIS
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>pilihan kelas</legend>
+        <label for="kelas">kelas</label>
+        <select name="kelas" id="kelas">
+            <option value="">~pilih kelas~</option>
+            <option value="scratch">scratch</option>
+            <option value="html" selected>html</option>
+            <option value="bahasa inggris">bahasa inggris</option>
+            <option value="bahasa arab">bahasa arab</option>
+            <option value="memasak">memasak</option>
+            <option value="menjahit">menjahit</option>
+        </select>
+    </fieldset>
+
+    <br>
+    <input type="RESET" name="RESET" id="RESET" value="CLEAR">
+    <input type="SUBMIT" name="SUBMIT" id="SUBMIT" value="SEND">
+    
+  </form>
+</body>
+</html>
